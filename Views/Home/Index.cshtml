@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<h1> Podaj rozmiar tablicy </h1>
+<input id="sizeBox" type="number" name="size" min="3" max="65000" runat="server">*@
+
+<h1> Wybierz typ tablicy </h1>
+
+<li>@Html.ActionLink("Zwykla Tablica 10", "JustTab", "Home",new { size = 10}, null)</li>
+<li>@Html.ActionLink("Zwykla Tablica 1000", "JustTab", "Home", new { size = 1000 }, null)</li>
+<li>@Html.ActionLink("Zwykla Tablica 65000", "JustTab", "Home", new { size = 65000 }, null)</li>
+
+<li>@Html.ActionLink("Hashowana Tablica 10", "HashTab", "Home", new { size = 10 }, null)</li>
+<li>@Html.ActionLink("Hashowana Tablica 1000", "HashTab", "Home", new { size = 1000 }, null)</li>
+<li>@Html.ActionLink("Hashowana Tablica 65000", "HashTab", "Home", new { size = 65000 }, null)</li>
+
+
